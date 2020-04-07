@@ -54,11 +54,21 @@ $(window).scroll(function(){
 	$('.jumbotron h3').css({
 		'transform' : 'translate(0px, '+ wScroll/0.8 +'%)'
 	});
+
 	$('.jumbotron p').css({
 		'transform' : 'translate(0px, '+ wScroll/1.2 +'%)'
 	});
 
+	$('.jumbotron h4').css({
+		'transform' : 'translate(0px, '+ wScroll/1.6 +'%)'
+	});
+
 });
+
+
+
+
+// scroll smooth
 
 
 $(document).ready(function(){

@@ -531,7 +531,7 @@ header{
 .sosial-media{
 	background-color: #087d02;
 	width: 100%;
-	height: 60px;
+	height: 100px;
 	text-align:center;
 	border: none;
 	
@@ -543,12 +543,22 @@ header{
 	font-size: 20px;
 	color: #fff;
 	padding: 20px;
+	padding-bottom: 10px;
 	border: none;
-	
-	
 
 
 }
+
+.sosial-media p{
+	font-size: 14px;
+	color: #fff;
+	padding-top: 20px;
+	padding-bottom: -10px;
+
+
+}
+
+
 
 @media screen and (max-width: 1000px) {
    #content,

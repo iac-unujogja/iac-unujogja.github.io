@@ -49,13 +49,14 @@ footer{
 	background-color: #087d02;
 	text-align: center;
 	font-weight: bold;
+	width: 100%;
 }
 
 
 nav ul{
 	margin-right: 30px;
 }
-nav a {
+nav ul li a {
 	font-size: 18px;
 	font-weight: 700;
 	text-decoration: none;
@@ -89,26 +90,68 @@ nav a:hover {
 }
 
 
+
+/*laman profile*/
 .card {
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
    background-color: white;
    border-radius: 5px;
    padding: 20px;
-   margin-top: 20px;
+   /*margin-top: 20px;*/
    height: 0 auto;
 }
 
 .card-1 {
    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
    border-radius: 5px;
-   padding: 20px;
    margin-bottom: 20px;
    background-color: white;
-   margin-right: 20px;
-   text-align: center;
    z-index: -1;
 
 }
+
+.kategori{
+	background: #087d02;
+	padding: 5px;
+	padding-left: 10px;
+	color: white;
+}
+
+.kategori-isi{
+	padding:20px;
+	padding-top: -20px;
+}
+
+.card-1 .kategori-isi img{
+	margin-top: -20px;
+	width: 260px;
+	/*
+	position: relative;*/
+}
+
+.card-1 .kategori-isi p{
+	/*position: absolute;*/
+	font-size: 15px;
+}
+
+.jumbotron-profile{
+	font-size: 24px;
+	padding: 200px;
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url(../image/bg-1.jpg);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+	text-align: center;
+	color: white; 
+	font-weight: 300;
+	 background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+}
+
+/*akhir laman profile*/
+
 
 .jumbotron{
 	font-size: 24px;
@@ -358,7 +401,7 @@ nav a:hover {
 	right: 30px;
 }
 
-/*lightbox*/
+/* akhir lightbox*/
 
 /*cover*/
 nav ul{
@@ -375,6 +418,8 @@ nav ul li{
 
 }
 
+
+
 nav{
 	background-color: rgba(0,0,0,0);
 	position: fixed;
@@ -384,6 +429,32 @@ nav{
 	transition: 1s ease;
 }
 
+.pembungkus{
+	margin: auto;
+	width: 70%;
+
+}
+
+.pembungkus .logo-ukm{
+
+	float: left;
+	margin-left: 100px;
+	color: white;
+	height:40px;
+	line-height: 40px; 
+	cursor: pointer;
+
+	
+}
+
+.pembungkus .logo-ukm a{
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Fugaz+One', cursive;
+}
+
+
+
 
 .header-1{
 	background-color: #eee;
@@ -391,6 +462,7 @@ nav{
 }
 
 #content {
+	padding-top: 20px;
    float: left;
    width: 75%;
  }
@@ -399,6 +471,7 @@ nav{
  	float: right;
  	width: 25%;
  	padding-left: 20px;
+
  }
 
  main{
@@ -559,7 +632,7 @@ header{
 
 }
 
-
+/*responsive mobile*/
 
 @media screen and (max-width: 1000px) {
    #content,
@@ -594,6 +667,12 @@ header{
 
    }
 
+   .logo-ukm{
+   		display: none;
+	
+	}
+
+
    .active
    {
 
@@ -606,6 +685,19 @@ header{
 		padding: 100px;
 		height: 700px;
 		font-size: 24px;
+	}
+
+	.jumbotron-profile{
+
+		height: 100px;
+		font-size: 14px;
+	}
+
+	.card-1 .kategori-isi img{
+		margin-top: -20px;
+		width: 100%;
+		/*
+		position: relative;*/
 	}
 
 	.style-h3{
@@ -645,6 +737,19 @@ header{
 		font-size: 20px;
 	}
 
+	.jumbotron-profile{
+	
+		height: 100px;
+		font-size: 14px;
+	}
+
+	.card-1 .kategori-isi img{
+		margin-top: -20px;
+		width: 100%;
+		/*
+		position: relative;*/
+	}
+
 
 }
 
@@ -660,8 +765,8 @@ header{
 	}
 
 	.portfolio .gaecard1 .item{
-		flex-basis: calc(100% - 30px);
-		max-width: calc(100% - 30px);
+		flex-basis: calc(100%);
+		max-width: calc(100%);
 
 	}
 
@@ -674,8 +779,20 @@ header{
 
 	}
 
+	.jumbotron-profile{
+	
+		height: 100px;
+		font-size: 14px;
+	}
+
 	.style-h3{
 		font-size: 25px;
+	}
+
+	.card-1 .kategori-isi img{
+		margin-top: -20px;
+		width: 100%;
+		
 	}
 }
 

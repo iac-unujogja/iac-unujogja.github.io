@@ -63,6 +63,10 @@ $(window).scroll(function(){
 		'transform' : 'translate(0px, '+ wScroll/1.6 +'%)'
 	});
 
+	$('.jumbotron-profile h3').css({
+		'transform' : 'translate(0px, '+ wScroll/0.8 +'%)'
+	});
+
 });
 
 
